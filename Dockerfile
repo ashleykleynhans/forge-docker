@@ -32,8 +32,7 @@ ENV TORCH_COMMAND="pip install torch==${TORCH_VERSION} torchvision --index-url $
 ENV XFORMERS_PACKAGE="xformers==${XFORMERS_VERSION} --index-url ${TORCH_INDEX_URL}"
 RUN source /venv/bin/activate && \
     ${TORCH_COMMAND} && \
-    pip3 install pydantic==1.10.15 && \
-    pip3 install -r requirements_versions.txt --extra-index-url ${TORCH_INDEX_URL} && \
+    pip3 install -r requirements_versions.txt && \
     pip3 install ${XFORMERS_PACKAGE} &&  \
     deactivate
 
@@ -44,7 +43,7 @@ RUN source /venv/bin/activate && \
     pip3 install insightface && \
     pip3 uninstall -y onnxruntime && \
     pip3 install onnxruntime-gpu && \
-    pip install pydantic==1.10.11 && \
+    pip install pydantic==1.10.15 && \
     deactivate
 
 COPY forge/cache-sd-model.py ./
