@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 echo "Starting Stable Diffusion WebUI Forge"
+export PYTHONUNBUFFERED=1
 export HF_HOME="/workspace"
 VENV_PATH=$(cat /workspace/stable-diffusion-webui-forge/venv_path)
 source ${VENV_PATH}/bin/activate
