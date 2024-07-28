@@ -14,8 +14,8 @@
 * Python 3.10.12
 * [Stable Diffusion WebUI Forge](
   https://github.com/lllyasviel/stable-diffusion-webui-forge)
-* Torch 2.3.1
-* xformers 0.0.27
+* Torch 2.4.0
+* xformers 0.0.27.post2
 * [Jupyter Lab](https://github.com/jupyterlab/jupyterlab)
 * [code-server](https://github.com/coder/code-server)
 * [runpodctl](https://github.com/runpod/runpodctl)
